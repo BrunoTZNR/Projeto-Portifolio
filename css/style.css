@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Signika+Negative&display=swap');
+
+:root{
+    --border-color: rgb(175, 69, 20);
+    --font-logo: 'Bebas Neue', arial, sans-serif;
+    --font-tittles: 'Signika Negative', arial, sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+body{
+    font-family: arial, sans-serif;
+}
+
+/* header */
+.menu-bg{
+    background-color: rgb(204, 116, 0);
+}
+
+.menu{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu a{
+    color: #fff;
+}
+
+.menu-logo p{
+    font-size: 2.25em;
+    font-family: var(--font-logo);
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin: 0 10px;
+    color: white;
+}
+
+.links-internos a:hover{
+    color: rgb(141, 45, 0);
+}
+
+.links-internos ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.links-internos a{
+    font-size: 1.25em;
+    padding: 10px;
+}
+
+/* ancôra top*/
+
+.bottom-top{
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    background-color: rgb(204, 116, 0);
+    border-radius: 50%;
+    border: 2px solid #fff;
+    right: 10px;
+    bottom: 10px;
+}
+
+.seta-cima img{
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+/* inicio */
+
+.nome-inicio{
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    text-align: center;
+    margin: 50px 0 25px 0;
+    flex-direction: column;
+    height: 130px;
+}
+
+.nome-inicio h2{
+    margin-bottom: 5px;
+    font-size: 1.75em;
+}
+
+.nome-inicio h3{
+    font-size: 1.25em;
+}
+
+.contato{
+    background: rgb(204, 116, 0);
+    border-radius: 15px;
+    color: #fff;
+    margin-top: 10px;
+    width: 120px;
+    text-align: center;
+    transition: .25s;
+    font-size: 1.50em;
+    display: block;
+    padding: 10px;
+}
+
+.contato:hover{
+    color: rgb(141, 45, 0);
+    width: 140px;
+    border-bottom: 3px solid rgb(141, 45, 0);
+}
+
+/* identficacao */
+
+.identificacao{
+    border-left: 5px solid var(--border-color);
+    border-right: 5px solid var(--border-color);
+    border-radius: 3px;
+    background-color: rgb(240, 238, 238);
+    max-width: 960px;
+    margin: 60px auto;
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.ident-desc{
+    margin: 0 10px;
+}
+
+.ident-desc h1{
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    font-family: var(--font-tittles);
+}
+
+.ident-desc p{
+    font-size: 1.25em;
+    text-indent: 25px;
+    line-height: 23px;
+}
+
+/* formação */
+
+.formacao{
+    max-width: 960px;
+    padding: 0 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.form-desc h1{
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    font-family: var(--font-tittles);
+}
+
+.form-desc p{
+    font-size: 1.25em;
+    text-indent: 25px;
+}
+
+/* expectativas */
+
+.expectativas-futuro{
+    max-width: 960px;
+    padding: 0 10px;
+    margin: 60px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.expec-desc h1{
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    font-family: var(--font-tittles);
+}
+
+.expec-desc p{
+    font-size: 1.25em;
+    text-indent: 25px;
+    line-height: 23px;
+}
+
+/* hobbies */
+
+.hobbies{
+    max-width: 960px;
+    margin: 0 auto 60px auto;
+    padding: 0 10px;
+}
+
+.hobbies h1{
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    font-family: var(--font-tittles);
+}
+
+.hobs-container{
+    display: flex;
+}
+
+.hobs{
+    flex: 1 1 495px;
+    margin: 10px;
+}
+
+.hobs h3{
+    font-size: 1.5em;
+    color: rgb(119, 119, 119);
+    background-color: rgb(231, 231, 231);
+    padding: 40px 0 20px 25px;
+    border-top: 5px solid rgb(175, 55, 0);
+    font-family: var(--font-tittles);
+}
+
+.hobs p{
+    font-size: 1em;
+    color: rgb(119, 119, 119);
+    background-color: rgb(231, 231, 231);
+    padding: 0 25px 15px 25px;
+}
+
+.hobs figure{
+    height: 245px;
+}
+
+/* footer */
+
+.baixo{
+    background-color: rgb(204, 116, 0);
+    display: flex;
+    justify-content: center;
+}
+
+.baixo p{
+    font-size: 1.25em;
+    color: white;
+    height: 65px;
+    padding-top: 23px;
+}
+
+/* minhas redes */
+
+.redes-container{
+    max-width: 960px;
+    margin: 0 auto 45px auto;
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+    height: 100px;
+}
+
+.redes-nome{
+    margin-bottom: 15px;
+    /*display: block;
+    top: 0;*/
+}
+
+.redes-container a:hover{
+    color: rgb(141, 45, 0);
+    width: 140px;
+    border-bottom: 3px solid rgb(141, 45, 0);
+}
+
+.redes-itens ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.redes-itens a{
+    background: rgb(204, 116, 0);
+    border-radius: 15px;
+    color: #fff;
+    margin: 0 10px;
+    width: 115px;
+    text-align: center;
+    transition: .25s;
+    font-size: 1.25em;
+    display: block;
+    padding: 10px;
+}
+
+/* responsividade */
+
+@media screen and (max-width: 768px){
+    /* header */
+    .menu{
+        justify-content: center;
+    }
+
+    .links-internos ul{
+        justify-content: center;
+    }
+
+    /* seta ancora */
+    .bottom-top{
+        right: 10px;
+        bottom: 10px;
+    }
+
+    /* redes sociais */
+        .redes-container{
+        justify-content: center;
+    }
+
+    /* identificação */
+    .ident-desc h1{
+        text-align: center;
+    }
+
+    .ident-desc p{
+        text-align: justify;
+    }
+
+    /* formação/expectativas */
+    .form-desc h1, .expec-desc h1{
+        text-align: center;
+    }
+
+    .form-desc p, .expec-desc p{
+        text-align: center;
+    }
+
+    /* hobbies */
+    .hobbies{
+        margin-bottom: 15px;
+    }
+
+    .hobbies h1{
+        text-align: center;
+    }
+
+    .hobs-container{
+        flex-direction: column;
+    }
+
+    .hobs{
+        max-width: 480px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 539px){
+    /* redes sociais */
+    .redes-itens ul{
+        justify-content: center;
+    }
+    .redes-itens li:nth-child(4){
+        margin-top: 19.5px;
+    }
+
+    .redes-container{
+        flex-flow: wrap row;
+    }
+}
+
+@media screen and (max-width: 400px){
+    
+    /* header */
+    .menu{
+        justify-content: center;
+    }
+
+    .links-internos ul{
+        justify-content: center;
+    }
+
+    /* seta ancora */
+    .bottom-top{
+        right: 10px;
+        bottom: 10px;
+    }
+
+    /* redes sociais */
+    .redes-container{
+        max-width: 100%;
+        flex-direction: row;
+    }
+
+    .redes-itens ul{
+        justify-content: center;
+    }
+
+    .redes-itens li:nth-child(3), .redes-itens li:nth-child(4){
+        margin: 19.5px 0 0 0;
+    }
+
+    /* identificação */
+    .ident-desc h1{
+        text-align: center;
+    }
+
+    .ident-desc p{
+        text-align: justify;
+    }
+
+    /* formação/expectativas */
+    .form-desc h1, .expec-desc h1{
+        text-align: center;
+    }
+
+    .form-desc p, .expec-desc p{
+        text-align: center;
+    }
+
+    /* hobbies */
+    .hobbies h1{
+        text-align: center;
+    }
+
+    .hobs-container{
+        flex-direction: column;
+    }
+
+    .hobs{
+        flex: 1 1 380px;
+    }
+
+    /* baixo */
+    .baixo p{
+        font-size: 1.08em;
+    }
+}

@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto+Sans+Mono', arial, sans-serif;
+}
+
+input, textarea{
+    display: block;
+    outline: none;
+    background: none;
+}
+
+body{
+    height: 100%;
+}
+
+/* header */
+
+.breadcrumb{
+    background-color: rgb(204, 116, 0);
+    display: flex;
+    justify-content: center;
+}
+
+.breadcrumb-item{
+    padding: 20px 0 20px 0;
+}
+
+.breadcrumb-item a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.breadcrumb-item a:hover{
+    color: rgb(141, 45, 0);
+}
+
+.breadcrumb li{
+    color: rgb(141, 45, 0);
+}
+
+/* textin */
+
+.textin{
+    font-size: 2em;
+    text-align: center;
+    margin: 30px 0 60px 0;
+    padding: 0 20px;
+}
+
+/* formulário */
+
+form{
+    max-width: 960px;
+    margin: 0 auto 0 auto;
+}
+
+.botao input{
+    width: 100px;
+    height: 42px;
+    background-color: rgb(204, 116, 0);
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    transition: .25s ease-in;
+}
+
+.botao input:hover{
+    color: rgb(141, 45, 0);
+    border-bottom: 3px solid rgb(141, 45, 0);
+    width: 103px;
+}
+
+/* footer */
+
+.baixo{
+    background-color: rgb(204, 116, 0);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: flex-end;
+    position: fixed;
+    bottom:0;
+    left:0;
+    flex-wrap: wrap;
+}
+
+.baixo p{
+    font-size: 1.25em;
+    color: white;
+    height: 65px;
+    padding-top: 23px;
+}
+
+/* responsividade */
+
+@media screen and (max-width: 768px) {
+
+    .formulario{
+        max-width: 80%;
+    }
+}
