@@ -5,18 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style-contato.css">
-    <link rel="stylesheet" href="../css-bootstrap/bootstrap.min.css">
     <title>Contato</title>
 </head>
 <body>
 
-    <header class="migalha-de-pao">
-        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="../index.html">Página Inicial</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Contato</li>
-            </ol>
-        </nav>
+    <header class="menu-bg">
+        <div class="menu">
+            <div class="menu-logo">
+                <p>TZNR</p>
+            </div>
+            
+            <a href="../index.html" class="links-internos">Página Inicial</a>
+        </div>
     </header>
 
     <div class="textin">
@@ -24,14 +24,16 @@
     </div>
 
     <form class="formulario">
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Endereço de E-mail</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com" required>
+        <div class="input-email">
+            <label for="email">Digite seu e-mail:</label>
+            <input type="email" name="email" id="email" required>
         </div>
-        <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Assunto</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" req></textarea>
+
+        <div class="input-assunto">
+            <label for="assunto">Discorra sobre o assunto:</label>
+            <textarea name="assunto" id="assunto"></textarea>
         </div>
+
         <div class="botao">
             <input type="submit" value="Enviar">
         </div>
@@ -40,6 +42,5 @@
     <footer class="baixo">
         <p>Todos direitos reservados ao &copy;Bruno </p>
     </footer>
-    <script src="../js-bootstrap/bootstrap.min.js"></script>
 </body>
 </html>
