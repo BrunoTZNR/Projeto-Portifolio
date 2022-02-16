@@ -30,6 +30,8 @@ li{
 
 body{
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 /* header */
@@ -57,7 +59,7 @@ body{
     letter-spacing: 3px;
     font-weight: bold;
     margin: 0 10px;
-    color: white;
+    color: #fff;
 }
 
 .links-internos:hover{
@@ -96,7 +98,7 @@ form{
 .input-email input[type="email"]{
     display: block;
     margin: 8px auto 0;
-    border: 2px solid rgb(204, 116, 0);
+    border: 2px solid var(--color);
     border-radius: 15px;
     width: 80%;
     height: 35px;
@@ -112,7 +114,7 @@ form{
 .input-assunto textarea{
     display: block;
     margin: 8px auto 0;
-    border: 2px solid rgb(204, 116, 0);
+    border: 2px solid var(--color);
     border-radius: 15px;
     width: 80%;
     height: 60px;
@@ -128,7 +130,7 @@ form{
     width: 100px;
     margin: 0 auto;
     height: 42px;
-    background-color: rgb(204, 116, 0);
+    background-color: var(--color);
     cursor: pointer;
     border-radius: 20px;
     border: none;
@@ -137,47 +139,50 @@ form{
 }
 
 .botao input:hover{
-    color: rgb(141, 45, 0);
-    border-bottom: 3px solid rgb(141, 45, 0);
+    color: var(--strong-color);
+    border-bottom: 3px solid var(--strong-color);
 }
 
 /* footer */
 
 .baixo{
-    background-color: rgb(204, 116, 0);
-    display: flex;
+    background-color: var(--color);
     width: 100%;
-    justify-content: center;
-    align-content: flex-end;
-    position: fixed;
-    bottom:0;
-    left:0;
-    flex-wrap: wrap;
+    height: 65px;
+    align-items: flex-end;
+    /*position: fixed;
+    bottom:0;*/
+    /*display: flex;
+    align-items: center;
+    justify-content: center;*/
 }
 
 .baixo p{
     font-size: 1.25em;
     color: white;
-    height: 45px;
-    padding-top: 23px;
+    margin: 0 10px;
 }
 
 /* responsividade */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px){
+    /*header*/
 
     .menu{
-        padding: 10px;
+        padding: 15px 10px;
     }
+}
+
+@media screen and (max-width: 768px) {
+    /*formulario*/
 
     .formulario{
         max-width: 80%;
     }
 
+    /*footer*/
+
     .baixo{
         text-align: center;
-        height: 60px;
-        font-size: 1em;
-        padding: 0 10px 10px;
     }
 }

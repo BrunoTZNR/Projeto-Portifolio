@@ -19,6 +19,7 @@ li{
 
 a{
     text-decoration: none;
+    color: #fff;
 }
 
 img{
@@ -43,9 +44,6 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-}
-
-.menu a{
     color: #fff;
 }
 
@@ -55,21 +53,17 @@ body{
     letter-spacing: 3px;
     font-weight: bold;
     margin: 0 10px;
-    color: white;
-}
-
-.links-internos a:hover{
-    color: var(--strong-color);
 }
 
 .links-internos ul{
     display: flex;
     flex-wrap: wrap;
+    gap: 0 10px;
+    font-size: 1.25em;
 }
 
-.links-internos a{
-    font-size: 1.25em;
-    padding: 10px;
+.links-internos a:hover{
+    color: var(--strong-color);
 }
 
 /* ancôra top*/
@@ -95,11 +89,10 @@ body{
 
 .nome-inicio{
     display: flex;
-    /*justify-content: center;*/
     align-items: center;
     text-align: center;
     margin: 50px 0 25px 0;
-    flex-direction: column;
+    flex-flow: wrap column;
     height: 130px;
 }
 
@@ -115,7 +108,6 @@ body{
 .contato{
     background: var(--color);
     border-radius: 15px;
-    color: #fff;
     margin-top: 10px;
     width: 120px;
     text-align: center;
@@ -131,13 +123,51 @@ body{
     border-bottom: 3px solid var(--strong-color);
 }
 
+/* minhas redes */
+
+.redes-container{
+    max-width: 960px;
+    margin: 0 auto 45px auto;
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+    height: 90px;
+}
+
+.redes-nome{
+    margin-bottom: 15px;
+}
+
+.redes-container a:hover{
+    color: var(--strong-color);
+    border-bottom: 3px solid var(--strong-color);
+}
+
+.redes-itens ul{
+    display: flex;
+    flex-flow: wrap row;
+}
+
+.redes-itens a{
+    background: var(--color);
+    border-radius: 15px;
+    margin: 0 10px;
+    width: 115px;
+    height: 43px;
+    text-align: center;
+    transition: .25s;
+    font-size: 1.25em;
+    display: block;
+    padding: 10px;
+}
+
 /* identficacao */
 
 .identificacao{
     border-left: 5px solid var(--strong-color);
     border-right: 5px solid var(--strong-color);
     border-radius: 3px;
-    background-color: rgb(240, 238, 238);
+    background-color: rgb(241, 239, 239);
     max-width: 960px;
     margin: 60px auto;
     padding: 50px 0;
@@ -168,8 +198,6 @@ body{
     max-width: 960px;
     padding: 0 10px;
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
     
 }
 
@@ -190,8 +218,6 @@ body{
     max-width: 960px;
     padding: 0 10px;
     margin: 60px auto;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .expec-desc h1{
@@ -222,17 +248,18 @@ body{
 
 .hobs-container{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .hobs{
-    flex: 1 1 495px;
-    margin: 10px;
+    max-width: 460px;
+    color: rgb(119, 119, 119);
+    background-color: rgb(231, 231, 231);
 }
 
 .hobs h3{
     font-size: 1.5em;
-    color: rgb(119, 119, 119);
-    background-color: rgb(231, 231, 231);
     padding: 40px 0 20px 25px;
     border-top: 5px solid var(--strong-color);
     font-family: var(--font-tittles);
@@ -240,13 +267,7 @@ body{
 
 .hobs p{
     font-size: 1em;
-    color: rgb(119, 119, 119);
-    background-color: rgb(231, 231, 231);
     padding: 0 25px 15px 25px;
-}
-
-.hobs figure{
-    height: 245px;
 }
 
 /* footer */
@@ -259,129 +280,86 @@ body{
 
 .baixo p{
     font-size: 1.25em;
-    color: white;
+    color: #fff;
     height: 65px;
     padding-top: 23px;
 }
 
-/* minhas redes */
-
-.redes-container{
-    max-width: 960px;
-    margin: 0 auto 45px auto;
-    display: flex;
-    flex-flow: wrap column;
-    align-items: center;
-    height: 100px;
-}
-
-.redes-nome{
-    margin-bottom: 15px;
-    /*display: block;
-    top: 0;*/
-}
-
-.redes-container a:hover{
-    color: var(--strong-color);
-    width: 140px;
-    border-bottom: 3px solid var(--strong-color);
-}
-
-.redes-itens ul{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.redes-itens a{
-    background: var(--color);
-    border-radius: 15px;
-    color: #fff;
-    margin: 0 10px;
-    width: 115px;
-    text-align: center;
-    transition: .25s;
-    font-size: 1.25em;
-    display: block;
-    padding: 10px;
-}
-
 /* responsividade */
 
-@media screen and (max-width: 768px){
-    /* header */
+@media screen and (max-width: 970px){
+    
     .menu{
-        justify-content: center;
+        padding: 15px 10px;
     }
-
-    .links-internos ul{
-        justify-content: center;
-    }
-
-    /* seta ancora */
-    .bottom-top{
-        right: 10px;
-        bottom: 10px;
-    }
-
-    /* redes sociais */
-        .redes-container{
-        justify-content: center;
-    }
-
-    /* identificação */
-    .ident-desc h1{
+    
+    .ident-desc h1, .hobbies h1, .expec-desc h1, .form-desc h1, .form-desc p{
         text-align: center;
     }
 
-    .ident-desc p{
+    .ident-desc p, .expec-desc p{
         text-align: justify;
     }
-
-    /* formação/expectativas */
-    .form-desc h1, .expec-desc h1{
-        text-align: center;
-    }
-
-    .form-desc p, .expec-desc p{
-        text-align: center;
-    }
-
-    /* hobbies */
-    .hobbies{
-        margin-bottom: 15px;
-    }
-
-    .hobbies h1{
-        text-align: center;
-    }
-
+    
     .hobs-container{
         flex-direction: column;
+        row-gap: 25px;
     }
 
     .hobs{
-        max-width: 480px;
+        max-width: 475px;
         margin: 0 auto;
     }
 }
 
 @media screen and (max-width: 539px){
-    /* redes sociais */
-    .redes-itens ul{
+
+    .menu{
         justify-content: center;
     }
-    .redes-itens li:nth-child(4){
-        margin-top: 19.5px;
+
+    .redes{
+        margin-bottom: 20px;
     }
 
     .redes-container{
         flex-flow: wrap row;
+        justify-content: center;
+    }
+
+    .redes-itens {
+        width: 400px;
+    }
+
+    .redes-itens ul{
+        justify-content: center;
+        row-gap: 19.5px;
+    }
+
+    .links-internos{
+        display: none;
     }
 }
 
+@media screen and (max-width: 349px){
+    .nome-inicio{
+        height: 150px;
+    }
+
+    .redes-itens a{
+        display: flex;
+        justify-content: center;
+    }
+
+    .identificacao{
+        padding: 15px 0;
+        margin: 50px 0;
+    }
+}
+
+/*
 @media screen and (max-width: 400px){
     
-    /* header */
     .menu{
         justify-content: center;
     }
@@ -390,13 +368,11 @@ body{
         justify-content: center;
     }
 
-    /* seta ancora */
     .bottom-top{
         right: 10px;
         bottom: 10px;
     }
 
-    /* redes sociais */
     .redes-container{
         max-width: 100%;
         flex-direction: row;
@@ -407,10 +383,9 @@ body{
     }
 
     .redes-itens li:nth-child(3), .redes-itens li:nth-child(4){
-        margin: 19.5px 0 0 0;
+        margin-top: 19.5px;
     }
 
-    /* identificação */
     .ident-desc h1{
         text-align: center;
     }
@@ -419,7 +394,6 @@ body{
         text-align: justify;
     }
 
-    /* formação/expectativas */
     .form-desc h1, .expec-desc h1{
         text-align: center;
     }
@@ -428,7 +402,6 @@ body{
         text-align: center;
     }
 
-    /* hobbies */
     .hobbies h1{
         text-align: center;
     }
@@ -441,8 +414,7 @@ body{
         flex: 1 1 380px;
     }
 
-    /* baixo */
     .baixo p{
         font-size: 1.08em;
     }
-}
+}*/
