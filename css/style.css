@@ -62,8 +62,13 @@ body{
     font-size: 1.25em;
 }
 
+.links-internos a{
+    padding: 8px;
+}
+
 .links-internos a:hover{
     color: var(--strong-color);
+    background-color: #fff;
 }
 
 /* ancôra top*/
@@ -127,7 +132,7 @@ body{
 
 .redes-container{
     max-width: 960px;
-    margin: 0 auto 45px auto;
+    margin: 0 auto 45px;
     display: flex;
     flex-flow: wrap column;
     align-items: center;
@@ -146,6 +151,7 @@ body{
 .redes-itens ul{
     display: flex;
     flex-flow: wrap row;
+    justify-content: center;
 }
 
 .redes-itens a{
@@ -312,32 +318,50 @@ body{
     }
 }
 
-@media screen and (max-width: 539px){
-
+@media screen and (max-width: 582px){
+/*header*/
     .menu{
         justify-content: center;
     }
 
-    .redes{
-        margin-bottom: 20px;
+    .links-internos{
+        display: none;
     }
-
+/*inicio*/
+    .nome-inicio{
+        margin: 30px 0 15px;
+    }
+/*redes*/
     .redes-container{
         flex-flow: wrap row;
         justify-content: center;
+        margin: 0;
+        height: 155px;
+    }
+
+    .redes-nome{
+        margin: 0;
     }
 
     .redes-itens {
         width: 400px;
     }
 
-    .redes-itens ul{
-        justify-content: center;
-        row-gap: 19.5px;
+    .redes-itens a{
+        margin: 10px 10px;
     }
-
-    .links-internos{
-        display: none;
+/*identificação*/
+    .identificacao{
+        margin: 30px auto;
+        padding: 25px 0;
+    }
+/*expectativas*/
+    .expectativas-futuro{
+        margin: 30px 0;
+    }
+/*hobbies*/
+    .hobbies{
+        margin-bottom: 30px;
     }
 }
 
