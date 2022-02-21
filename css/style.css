@@ -29,6 +29,7 @@ img{
 
 body{
     font-family: arial, sans-serif;
+    height: 100%;
 }
 
 /* header */
@@ -294,7 +295,6 @@ body{
 /* responsividade */
 
 @media screen and (max-width: 970px){
-    
     .menu{
         padding: 15px 10px;
     }
@@ -319,7 +319,6 @@ body{
 }
 
 @media screen and (max-width: 582px){
-/*header*/
     .menu{
         justify-content: center;
     }
@@ -327,11 +326,11 @@ body{
     .links-internos{
         display: none;
     }
-/*inicio*/
+
     .nome-inicio{
         margin: 30px 0 15px;
     }
-/*redes*/
+
     .redes-container{
         flex-flow: wrap row;
         justify-content: center;
@@ -350,16 +349,16 @@ body{
     .redes-itens a{
         margin: 10px 10px;
     }
-/*identificação*/
+
     .identificacao{
         margin: 30px auto;
         padding: 25px 0;
     }
-/*expectativas*/
+
     .expectativas-futuro{
         margin: 30px 0;
     }
-/*hobbies*/
+
     .hobbies{
         margin-bottom: 30px;
     }
@@ -380,65 +379,12 @@ body{
         margin: 50px 0;
     }
 }
-
 /*
-@media screen and (max-width: 400px){
-    
-    .menu{
-        justify-content: center;
+@media screen and (min-height: 1080px){
+    footer{
+        position: relative;
+        bottom: 0;
+        width: 100%;
     }
-
-    .links-internos ul{
-        justify-content: center;
-    }
-
-    .bottom-top{
-        right: 10px;
-        bottom: 10px;
-    }
-
-    .redes-container{
-        max-width: 100%;
-        flex-direction: row;
-    }
-
-    .redes-itens ul{
-        justify-content: center;
-    }
-
-    .redes-itens li:nth-child(3), .redes-itens li:nth-child(4){
-        margin-top: 19.5px;
-    }
-
-    .ident-desc h1{
-        text-align: center;
-    }
-
-    .ident-desc p{
-        text-align: justify;
-    }
-
-    .form-desc h1, .expec-desc h1{
-        text-align: center;
-    }
-
-    .form-desc p, .expec-desc p{
-        text-align: center;
-    }
-
-    .hobbies h1{
-        text-align: center;
-    }
-
-    .hobs-container{
-        flex-direction: column;
-    }
-
-    .hobs{
-        flex: 1 1 380px;
-    }
-
-    .baixo p{
-        font-size: 1.08em;
-    }
-}*/
+}
+*/
