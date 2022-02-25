@@ -9,34 +9,36 @@
 </head>
 <body>
     <header class="menu-bg">
-        <div class="menu">
+        <section class="menu">
             <div class="menu-logo">
                 <p>TZNR</p>
             </div>
             
             <a href="../index.html" class="links-internos">Página Inicial</a>
-        </div>
+        </section>
     </header>
+    
+    <main>
+        <article class="textin">
+            <h1>Entre em contato preenchendo este formulário</h1>
+        </article>
 
-    <div class="textin">
-        <h1>Entre em contato preenchendo este formulário</h1>
-    </div>
+        <form class="formulario">
+            <div class="input-email">
+                <label for="email">Digite seu e-mail:</label>
+                <input type="email" name="email" id="email" required placeholder="email@exemplo.com">
+            </div>
 
-    <form class="formulario">
-        <div class="input-email">
-            <label for="email">Digite seu e-mail:</label>
-            <input type="email" name="email" id="email" required>
-        </div>
+            <div class="input-assunto">
+                <label for="assunto">Discorra sobre o assunto:</label>
+                <textarea name="assunto" id="assunto"></textarea>
+            </div>
 
-        <div class="input-assunto">
-            <label for="assunto">Discorra sobre o assunto:</label>
-            <textarea name="assunto" id="assunto"></textarea>
-        </div>
-
-        <div class="botao">
-            <input type="submit" value="Enviar">
-        </div>
-    </form>
+            <div class="botao">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </main>
 
     <footer class="baixo">
         <p>Todos direitos reservados ao &copy;Bruno </p>
